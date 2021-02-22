@@ -2,8 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hellogo-gke
+
 spec:
   replicas: 3
+  selector:
+    matchLables:
+      app:hellogo-gke
   template:
     metadata:
       labels:
