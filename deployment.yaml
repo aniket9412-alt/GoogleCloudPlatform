@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hellogo-gke
+  name: hellogo
 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hellogo-gke
+      app: hellogo
   template:
     metadata:
       labels:
-        app: hellogo-gke
+        app: hellogo
     spec:
       containers:
       - name: hellogo
