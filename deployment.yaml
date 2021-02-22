@@ -14,7 +14,7 @@ spec:
         app: hellogo-gke
     spec:
       containers:
-      - name: hellogo-gke
-        image: hellogo-gke:latest
+      - name: hellogo
+        image: hellogo:latest
         ports:
         - containerPort: 8080
