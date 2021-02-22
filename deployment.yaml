@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hellogo-gke
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: hellogo-gke
+    spec:
+      containers:
+      - name: hellogo-gke
+        image: hellogo-gke:latest
+        ports:
+        - containerPort: 8080
+        env:
+          - name: PORT
+          value: "8080"
