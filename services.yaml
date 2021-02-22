@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
- name: hellogo-gke
+ name: hellogo
  labels:
- app: hellogo-gke
+   app: hellogo
 spec:
  type: LoadBalancer
  ports:
  - port: 80
- targetPort: 8080
+   targetPort: 8080
  selector:
- app: hellogo-gke
+   app: hellogo
