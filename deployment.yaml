@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hellogo
+  name: hellogo-gke
 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hellogo
+      app: hellogo-gke
   template:
     metadata:
       labels:
-        app: hellogo
+        app: hellogo-gke
     spec:
       containers:
-      - name: hellogo
-        image: hellogo:latest
+      - name: hellogo-gke
+        image: gcr.io/ultra-component-305305/hellogo:latest
         ports:
         - containerPort: 8080
