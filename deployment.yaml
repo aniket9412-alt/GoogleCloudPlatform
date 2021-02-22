@@ -18,6 +18,3 @@ spec:
         image: hellogo-gke:latest
         ports:
         - containerPort: 8080
-        env:
-        - name: PORT
-          value: "8080"
