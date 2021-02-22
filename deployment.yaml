@@ -19,5 +19,5 @@ spec:
         ports:
         - containerPort: 8080
         env:
-          - name: PORT
+        - name: PORT
           value: "8080"
